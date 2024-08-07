@@ -1,0 +1,132 @@
+/* style.css */
+body {
+    background: linear-gradient(to right, #32CD32, #FFFF00); /* Hijau ke Kuning */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: rgba(255, 255, 255, 0.8); /* Warna latar belakang transparan untuk header dan footer */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Highlight active nav item */
+nav ul li.active a {
+    color: #32CD32; /* Warna hijau sebagai tanda aktif */
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Warna latar belakang transparan untuk section */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 9px;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: tomato;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #555;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    max-width: 600px;
+    height: 700px;
+}
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animations */
+header, footer {
+    animation: fadeIn 1s ease-in-out;
+}
+
+section {
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+/* Social icons animation on hover */
+.social-icon:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* Highlight active nav item */
+nav ul li.active a {
+    color: #32CD32; /* Warna hijau sebagai tanda aktif */
+}
+
